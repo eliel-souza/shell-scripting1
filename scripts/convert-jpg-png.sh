@@ -14,3 +14,9 @@ convertImage() {
 }
 
 convertImage 2>error_log.txt
+
+if [ $? -eq 0 ]; then
+        echo "Conversão realizada com sucesso!"
+else
+        echo "Houve uma falha no processo!"
+fi
